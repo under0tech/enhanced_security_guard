@@ -4,7 +4,9 @@
 This script employs Linux systemd services, timers, and bash-scripts to establish layers of additional protection and shields, ensuring privacy for Linux workstations by concealing MAC addresses, locations, and preventing DNS leaks.
 
 ## MAC Address Concealment Service
-Boost your privacy by spoofing the actual MAC address. Follow these steps:
+Boost your privacy by spoofing the actual MAC address. 
+
+Follow these steps:
 
 - Copy the `hide_mac.sh` and `hide_mac.service` files to the `/etc/systemd/system` directory.
 
@@ -17,7 +19,9 @@ reboot
 ```
 
 ## Conceal Location DNS
-Ensure privacy by configuring your own list of DNS servers to prevent location tracking and exposure of your address. Follow these steps:
+Ensure privacy by configuring your own list of DNS servers to prevent location tracking and exposure of your address. 
+
+Follow these steps:
 
 - Copy the `hide_location.sh`, `hide_location.service`, and `hide_location.timer` files to the `/etc/systemd/system` directory.
 
@@ -30,7 +34,9 @@ reboot
 ```
 
 ## Implement SSL-based OpenVPN
-Secure your internet traffic by establishing a VPN (Virtual Private Network) tunnel. Follow these steps:
+Secure your internet traffic by establishing a VPN (Virtual Private Network) tunnel. 
+
+Follow these steps:
 
 - Copy the `open_vpn.sh`, `open_vpn.service`, `open_vpn.config`, and `open_vpn.timer`, along with all files starting with `vpnbook-*`, to the `/etc/systemd/system` directory.
 
@@ -43,7 +49,9 @@ reboot
 ```
 
 ## Establish Security Guard
-Setup constant monitoring for breaches and threats while working on your Linux workstation. Follow these steps:
+Setup constant monitoring for breaches and threats while working on your Linux workstation. 
+
+Follow these steps:
 
 - Copy the `guard.sh`, `guard.service`, and `guard.timer` files to the `/etc/systemd/system` directory.
 
@@ -62,7 +70,9 @@ To diagnose these issues and check service status, health, and errors, execute t
 ```bash
 sudo systemctl status hide_mac.service
 ```
-In many cases, this problem stems from the SELinux policy subsystem. If you're the sole user of the computer, you likely don't need this subsystem. Here's how you can fix this:
+In many cases, this problem stems from the SELinux policy subsystem. If you're the sole user of the computer, you likely don't need this subsystem. 
+
+Here's how you can fix this:
 
 - Open a Bash terminal and execute the following command:
 ```bash
