@@ -1,0 +1,6 @@
+[Unit]
+Description=Open VPN service
+
+[Service]
+Type=oneshot
+ExecStart=/etc/systemd/system/open_vpn.sh

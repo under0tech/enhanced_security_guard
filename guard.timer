@@ -1,0 +1,10 @@
+[Unit]
+Description=Security guard timer
+
+[Timer]
+OnBootSec=2m
+OnUnitActiveSec=4m
+Unit=guard.service
+
+[Install]
+WantedBy=timers.target

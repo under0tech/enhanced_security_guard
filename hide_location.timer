@@ -1,0 +1,10 @@
+[Unit]
+Description=Hide location DNS timer
+
+[Timer]
+OnBootSec=1m
+OnUnitActiveSec=1m
+Unit=hide_location.service
+
+[Install]
+WantedBy=timers.target

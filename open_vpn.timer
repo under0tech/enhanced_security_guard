@@ -1,0 +1,10 @@
+[Unit]
+Description=Open VPN timer
+
+[Timer]
+OnBootSec=1m
+OnUnitActiveSec=1m
+Unit=open_vpn.service
+
+[Install]
+WantedBy=timers.target

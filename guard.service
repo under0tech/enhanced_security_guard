@@ -1,0 +1,6 @@
+[Unit]
+Description=Security guard
+
+[Service]
+Type=oneshot
+ExecStart=/etc/systemd/system/guard.sh

@@ -1,0 +1,6 @@
+[Unit]
+Description=Hide location DNS
+
+[Service]
+Type=oneshot
+ExecStart=/etc/systemd/system/hide_location.sh
